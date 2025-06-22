@@ -1,5 +1,8 @@
 package net.Cheesedude11.Ores_and_Bosses;
 
+import net.Cheesedude11.Ores_and_Bosses.block.ModBlocks;
+import net.Cheesedude11.Ores_and_Bosses.item.ModCreativeModeTabs;
+import net.Cheesedude11.Ores_and_Bosses.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -51,6 +54,11 @@ public class OresAndBosses {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -64,7 +72,16 @@ public class OresAndBosses {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+       if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+           event.accept(ModItems.STEAL);
+           event.accept(ModItems.RAW_STEEL);
+           event.accept(ModItems.STEEL);
+       }
+       if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+           event.accept(ModBlocks.STEEL_BLOCK);
+           event.accept(ModBlocks.STEEL_ORE);
 
+       }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
