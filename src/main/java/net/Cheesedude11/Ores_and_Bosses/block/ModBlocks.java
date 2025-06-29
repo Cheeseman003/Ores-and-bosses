@@ -1,6 +1,7 @@
 package net.Cheesedude11.Ores_and_Bosses.block;
 
 import net.Cheesedude11.Ores_and_Bosses.OresAndBosses;
+import net.Cheesedude11.Ores_and_Bosses.block.custom.FrostedLight;
 import net.Cheesedude11.Ores_and_Bosses.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -28,6 +29,29 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(2,4),
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
+    public static final DeferredBlock<Block> SPARK_ORE = registerBlock("spark_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2,4),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> STEEL_DEEPSLATE_ORE = registerBlock("steel_deepslate_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2,4),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> URANIUM_ORE = registerBlock("uranium_ore",
+            () -> new DropExperienceBlock(UniformInt.of(4,7),
+                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> FROST_ORE = registerBlock("frost_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2,4),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> EFLAME_ORE = registerBlock("eflame_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2,4),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> FROSTEDLIGHT = registerBlock("frostedlight",
+            () -> new FrostedLight(BlockBehaviour.Properties.of().strength(1f).sound(SoundType.GLASS)
+                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(FrostedLight.CLICKED) ? 9999 : 0)));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

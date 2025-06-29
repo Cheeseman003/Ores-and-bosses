@@ -1,6 +1,8 @@
 package net.Cheesedude11.Ores_and_Bosses;
 
 import net.Cheesedude11.Ores_and_Bosses.block.ModBlocks;
+import net.Cheesedude11.Ores_and_Bosses.compontent.ModDataComponents;
+import net.Cheesedude11.Ores_and_Bosses.event.ModEvents;
 import net.Cheesedude11.Ores_and_Bosses.item.ModCreativeModeTabs;
 import net.Cheesedude11.Ores_and_Bosses.item.ModItems;
 import org.slf4j.Logger;
@@ -59,8 +61,11 @@ public class OresAndBosses {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModDataComponents.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
