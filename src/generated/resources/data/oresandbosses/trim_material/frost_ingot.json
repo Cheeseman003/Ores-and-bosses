@@ -1,0 +1,9 @@
+{
+  "asset_name": "frost_ingot",
+  "description": {
+    "color": "#031CFC",
+    "translate": "trim_material.oresandbosses.frost_ingot"
+  },
+  "ingredient": "oresandbosses:frost_ingot",
+  "item_model_index": 0.8
+}

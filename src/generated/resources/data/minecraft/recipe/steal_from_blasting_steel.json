@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 250,
+  "experience": 0.35,
+  "group": "molten_steel",
+  "ingredient": {
+    "item": "oresandbosses:steel"
+  },
+  "result": {
+    "count": 1,
+    "id": "oresandbosses:steal"
+  }
+}

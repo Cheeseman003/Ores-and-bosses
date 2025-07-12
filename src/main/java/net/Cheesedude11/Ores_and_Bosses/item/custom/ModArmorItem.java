@@ -20,8 +20,8 @@ import java.util.Map;
 public class ModArmorItem extends ArmorItem {
     private static final Map<Holder<ArmorMaterial>, List<MobEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<Holder<ArmorMaterial>, List<MobEffectInstance>>())
-                    .put(ModArmorMaterials.FROST_ARMOR_MATERIAL,
-                            List.of(new MobEffectInstance(MobEffects.WATER_BREATHING, 200, 1, false, false)))
+                    .put(ModArmorMaterials.FLAME_ARMOR_MATERIAL,
+                            List.of(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 1, false, false)))
                     .build();
 
     public ModArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties) {

@@ -26,6 +26,22 @@ public class ModArmorMaterials {
                 attribute.put(ArmorItem.Type.HELMET, 2);
                 attribute.put(ArmorItem.Type.BODY, 5);
             }), 14, 1f, 0f, () -> ModItems.FROST_INGOT.get());
+    public static final Holder<ArmorMaterial> FLAME_ARMOR_MATERIAL = register("flame",
+            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute ->{
+                attribute.put(ArmorItem.Type.BOOTS, 2);
+                attribute.put(ArmorItem.Type.LEGGINGS, 5);
+                attribute.put(ArmorItem.Type.CHESTPLATE, 6);
+                attribute.put(ArmorItem.Type.HELMET, 2);
+                attribute.put(ArmorItem.Type.BODY, 5);
+            }), 14, 1f, 0f, () -> ModItems.EFLAME.get());
+    public static final Holder<ArmorMaterial> SPARK_ARMOR_MATERIAL = register("spark",
+            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute ->{
+                attribute.put(ArmorItem.Type.BOOTS, 2);
+                attribute.put(ArmorItem.Type.LEGGINGS, 5);
+                attribute.put(ArmorItem.Type.CHESTPLATE, 6);
+                attribute.put(ArmorItem.Type.HELMET, 2);
+                attribute.put(ArmorItem.Type.BODY, 5);
+            }), 14, 1f, 0f, () -> ModItems.SPARK_INGOT.get());
 
 
 

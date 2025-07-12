@@ -72,11 +72,25 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.COPPER_HOE.get());
         handheldItem(ModItems.DIAMOND_HAMMER.get());
         handheldItem(ModItems.LIGHTNING_HAMMER.get());
+        handheldItem(ModItems.STEEL_CLEAVER.get());
+        handheldItem(ModItems.STEEL_PICKAXE.get());
+        handheldItem(ModItems.STEEL_AXE.get());
+        handheldItem(ModItems.STEEL_HOE.get());
+        handheldItem(ModItems.STEEL_SHOVEL.get());
+
 
         trimmedArmorItem(ModItems.FROST_HELMET);
         trimmedArmorItem(ModItems.FROST_CHESTPLATE);
         trimmedArmorItem(ModItems.FROST_LEGGINGS);
         trimmedArmorItem(ModItems.FROST_BOOTS);
+        trimmedArmorItem(ModItems.FLAME_HELMET);
+        trimmedArmorItem(ModItems.FLAME_CHESTPLATE);
+        trimmedArmorItem(ModItems.FLAME_LEGGINGS);
+        trimmedArmorItem(ModItems.FLAME_BOOTS);
+        trimmedArmorItem(ModItems.SPARK_HELMET);
+        trimmedArmorItem(ModItems.SPARK_CHESTPLATE);
+        trimmedArmorItem(ModItems.SPARK_LEGGINGS);
+        trimmedArmorItem(ModItems.SPARK_BOOTS);
 
     }
     // Shoutout to El_Redstoniano for making this

@@ -26,6 +26,8 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.MACE_ENCHANTABLE)
                 .add(ModItems.DIAMOND_HAMMER.get())
                 .add(ModItems.LIGHTNING_HAMMER.get());
+        tag(ItemTags.BOW_ENCHANTABLE)
+                .add(ModItems.FLAME_BOW.get());
 
         tag(ItemTags.SWORDS)
                 .add(ModItems.FROST_BITE.get());
@@ -35,6 +37,10 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.FLAME_BORN_KATANA.get());
         tag(ItemTags.SWORDS)
                 .add(ModItems.COPPER_SWORD.get());
+        tag(ItemTags.SWORDS)
+                .add(ModItems.SHIVERHEART.get());
+        tag(ItemTags.SWORDS)
+                .add(ModItems.STEEL_CLEAVER.get());
 
 
 
@@ -46,6 +52,9 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.FLAME_PICKAXE.get());
         tag(ItemTags.PICKAXES)
                 .add(ModItems.COPPER_PICKAXE.get());
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.STEEL_PICKAXE.get());
+
 
 
 
@@ -57,6 +66,8 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.FLAME_AXE.get());
         tag(ItemTags.AXES)
                 .add(ModItems.COPPER_AXE.get());
+        tag(ItemTags.AXES)
+                .add(ModItems.STEEL_AXE.get());
 
 
 
@@ -66,6 +77,8 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.SPARK_SHOVEL.get());
         tag(ItemTags.SHOVELS)
                 .add(ModItems.FLAME_SHOVEL.get());
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.STEEL_SHOVEL.get());
         tag(ItemTags.SHOVELS)
                 .add(ModItems.COPPER_SHOVEL.get());
 
@@ -79,21 +92,41 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.HOES)
                 .add(ModItems.FLAME_HOE.get());
         tag(ItemTags.HOES)
+                .add(ModItems.STEEL_HOE.get());
+        tag(ItemTags.HOES)
                 .add(ModItems.COPPER_HOE.get());
 
         this.tag(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.FROST_HELMET.get())
                 .add(ModItems.FROST_CHESTPLATE.get())
                 .add(ModItems.FROST_LEGGINGS.get())
-                .add(ModItems.FROST_BOOTS.get());
+                .add(ModItems.FROST_BOOTS.get())
+                .add(ModItems.FLAME_HELMET.get())
+                .add(ModItems.FLAME_CHESTPLATE.get())
+                .add(ModItems.FLAME_LEGGINGS.get())
+                .add(ModItems.FLAME_BOOTS.get())
+                .add(ModItems.SPARK_HELMET.get())
+                .add(ModItems.SPARK_BOOTS.get())
+                .add(ModItems.SPARK_CHESTPLATE.get())
+                .add(ModItems.SPARK_LEGGINGS.get());
+
+
         tag(ItemTags.HEAD_ARMOR_ENCHANTABLE)
-                .add(ModItems.FROST_HELMET.get());
+                .add(ModItems.FROST_HELMET.get())
+                .add(ModItems.SPARK_HELMET.get())
+                .add(ModItems.FLAME_HELMET.get());
         tag(ItemTags.LEG_ARMOR_ENCHANTABLE)
-                .add(ModItems.FROST_LEGGINGS.get());
+                .add(ModItems.FROST_LEGGINGS.get())
+                .add(ModItems.SPARK_LEGGINGS.get())
+                .add(ModItems.FLAME_LEGGINGS.get());
         tag(ItemTags.CHEST_ARMOR_ENCHANTABLE)
-                .add(ModItems.FROST_CHESTPLATE.get());
+                .add(ModItems.FROST_CHESTPLATE.get())
+                .add(ModItems.SPARK_CHESTPLATE.get())
+                .add(ModItems.FLAME_CHESTPLATE.get());
         tag(ItemTags.FOOT_ARMOR_ENCHANTABLE)
-                .add(ModItems.FROST_BOOTS.get());
+                .add(ModItems.FROST_BOOTS.get())
+                .add(ModItems.SPARK_BOOTS.get())
+                .add(ModItems.FLAME_BOOTS.get());
 
         this.tag(ItemTags.TRIM_MATERIALS)
                 .add(ModItems.FROST_INGOT.get());

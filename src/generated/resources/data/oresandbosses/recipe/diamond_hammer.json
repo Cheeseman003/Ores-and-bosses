@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:diamond_block"
+    },
+    "Y": {
+      "item": "minecraft:heavy_core"
+    }
+  },
+  "pattern": [
+    "XYX",
+    "XBX",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "oresandbosses:diamond_hammer"
+  }
+}

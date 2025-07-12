@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "oresandbosses:eflame"
+    }
+  },
+  "pattern": [
+    "XX ",
+    "XB ",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "oresandbosses:flame_axe"
+  }
+}

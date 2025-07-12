@@ -1,0 +1,15 @@
+// 1.21.1	2025-07-12T12:22:49.8758577	Tags for minecraft:item mod id oresandbosses
+79becd514d2b4558a06b8249119a0bda24f1eaf1 data/minecraft/tags/item/axes.json
+d8285cd4e56d7e642088870ff40ba6f6574668d9 data/minecraft/tags/item/enchantable/bow.json
+a33d4a80a788438ca3e186ed1710b11742c3b255 data/minecraft/tags/item/enchantable/chest_armor.json
+c980a061198225c483662ac2a1216806382f4732 data/minecraft/tags/item/enchantable/foot_armor.json
+498a431067df9c9b65f26b2a8bc3aad21b70cb98 data/minecraft/tags/item/enchantable/head_armor.json
+51d6c9f95a3fc23fd0f8a6c74f5d715c8e4578fd data/minecraft/tags/item/enchantable/leg_armor.json
+649761f776b9e18f005ab8b91180ba1e4190bb84 data/minecraft/tags/item/enchantable/mace.json
+2fb8e1fb9e1aff6ab7cbdcbda3f6b77e3e084234 data/minecraft/tags/item/hoes.json
+3c37a38ead1490a40207d2dd4f31c1bc8496742a data/minecraft/tags/item/pickaxes.json
+d935b87b11b86f041260eb3f2d90bd8aac3f82a6 data/minecraft/tags/item/shovels.json
+9142e4d2c5f20345ff62d999b1bc2093a736ecd0 data/minecraft/tags/item/swords.json
+e8d607fb7bb5ff914015716e0ad89dde80091e70 data/minecraft/tags/item/trimmable_armor.json
+d5a9b18fbc2bc47a7ec57297f80cf339f04451ab data/minecraft/tags/item/trim_materials.json
+64b7d3ac9142856bf255a636c2c7c884b1ed04f4 data/minecraft/tags/item/trim_templates.json

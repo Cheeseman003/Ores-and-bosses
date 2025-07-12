@@ -2,26 +2,20 @@ package net.Cheesedude11.Ores_and_Bosses;
 
 import net.Cheesedude11.Ores_and_Bosses.block.ModBlocks;
 import net.Cheesedude11.Ores_and_Bosses.compontent.ModDataComponents;
-import net.Cheesedude11.Ores_and_Bosses.event.ModEvents;
+import net.Cheesedude11.Ores_and_Bosses.effects.ModEffects;
+import net.Cheesedude11.Ores_and_Bosses.enchantment.ModEnchantmentEffects;
+import net.Cheesedude11.Ores_and_Bosses.event.FlameArmorEffectHandler;
+import net.Cheesedude11.Ores_and_Bosses.event.FrostAbilityEventHandler;
+import net.Cheesedude11.Ores_and_Bosses.event.LightningHammerAbilityHandler;
+import net.Cheesedude11.Ores_and_Bosses.event.MagnetDashHandler;
 import net.Cheesedude11.Ores_and_Bosses.item.ModCreativeModeTabs;
 import net.Cheesedude11.Ores_and_Bosses.item.ModItems;
+import net.Cheesedude11.Ores_and_Bosses.util.ModItemProperties;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
-import net.minecraft.client.Minecraft;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -34,10 +28,6 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.registries.DeferredItem;
-import net.neoforged.neoforge.registries.DeferredRegister;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(OresAndBosses.MODID)
@@ -57,16 +47,18 @@ public class OresAndBosses {
         NeoForge.EVENT_BUS.register(this);
 
         ModCreativeModeTabs.register(modEventBus);
+        NeoForge.EVENT_BUS.register(FlameArmorEffectHandler.class);
+        NeoForge.EVENT_BUS.register(MagnetDashHandler.class);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-
+        NeoForge.EVENT_BUS.register(FrostAbilityEventHandler.class);
+        NeoForge.EVENT_BUS.register(new LightningHammerAbilityHandler());
         ModDataComponents.register(modEventBus);
-
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
-
-
+        ModEffects.register(modEventBus);
+        ModEnchantmentEffects.register(modEventBus);
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
@@ -101,6 +93,7 @@ public class OresAndBosses {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
 
+            ModItemProperties.addCustomItemProperties();
         }
     }
 }

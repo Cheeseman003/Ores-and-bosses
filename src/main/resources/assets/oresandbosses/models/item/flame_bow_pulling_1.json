@@ -1,0 +1,6 @@
+{
+  "parent": "oresandbosses:item/flame_bow",
+  "textures": {
+    "layer0": "oresandbosses:item/flame_bow_pulling_1"
+  }
+}

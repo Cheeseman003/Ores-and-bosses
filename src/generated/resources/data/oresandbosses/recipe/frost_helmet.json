@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "oresandbosses:frost_ingot"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "B B",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "oresandbosses:frost_helmet"
+  }
+}

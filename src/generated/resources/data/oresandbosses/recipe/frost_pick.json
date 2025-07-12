@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "oresandbosses:frost_ingot"
+    }
+  },
+  "pattern": [
+    "XXX",
+    " B ",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "oresandbosses:frost_pick"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_eflame": {
+      "conditions": {
+        "items": [
+          {
+            "items": "oresandbosses:eflame"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "oresandbosses:flame_axe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_eflame"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "oresandbosses:flame_axe"
+    ]
+  }
+}

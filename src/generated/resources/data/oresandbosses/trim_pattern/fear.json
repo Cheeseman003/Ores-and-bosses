@@ -1,0 +1,8 @@
+{
+  "asset_id": "oresandbosses:fear",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.oresandbosses.fear"
+  },
+  "template_item": "oresandbosses:fear_armor_trim_smithing_template"
+}

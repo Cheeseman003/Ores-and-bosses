@@ -46,17 +46,34 @@ public class ModCreativeModeTabs {
                        output.accept(ModItems.FROST_SHOVEL);
                        output.accept(ModItems.FROST_HOE);
 
+
+                       output.accept(ModItems.SPARK_HELMET);
+                       output.accept(ModItems.SPARK_CHESTPLATE);
+                       output.accept(ModItems.SPARK_LEGGINGS);
+                       output.accept(ModItems.SPARK_BOOTS);
+
                        output.accept(ModItems.SPARK_EDGE);
                        output.accept(ModItems.SPARK_PICKAXE);
                        output.accept(ModItems.SPARK_AXE);
                        output.accept(ModItems.SPARK_SHOVEL);
                        output.accept(ModItems.SPARK_HOE);
 
+                       output.accept(ModItems.FLAME_HELMET);
+                       output.accept(ModItems.FLAME_CHESTPLATE);
+                       output.accept(ModItems.FLAME_LEGGINGS);
+                       output.accept(ModItems.FLAME_BOOTS);
                        output.accept(ModItems.FLAME_BORN_KATANA);
                        output.accept(ModItems.FLAME_PICKAXE);
                        output.accept(ModItems.FLAME_AXE);
                        output.accept(ModItems.FLAME_SHOVEL);
                        output.accept(ModItems.FLAME_HOE);
+
+                       output.accept(ModItems.STEEL_CLEAVER);
+                       output.accept(ModItems.STEEL_AXE);
+                       output.accept(ModItems.STEEL_PICKAXE);
+                       output.accept(ModItems.STEEL_SHOVEL);
+                       output.accept(ModItems.STEEL_HOE);
+
 
                        output.accept(ModItems.COPPER_SWORD);
                        output.accept(ModItems.COPPER_PICKAXE);
@@ -68,10 +85,12 @@ public class ModCreativeModeTabs {
 
                        output.accept(ModItems.DIAMOND_HAMMER);
                        output.accept(ModItems.LIGHTNING_HAMMER);
+                       output.accept(ModItems.SHIVERHEART);
 
 
                        output.accept(ModBlocks.FROSTEDLIGHT);
                        output.accept(ModItems.FEAR_ARMOR_TRIM);
+                       output.accept(ModItems.FLAME_BOW);
 
 
 

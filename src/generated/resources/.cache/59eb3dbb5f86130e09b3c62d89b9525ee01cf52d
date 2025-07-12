@@ -1,0 +1,9 @@
+// 1.21.1	2025-06-23T21:00:14.7427881	Loot Tables
+9c20006555ddc0244b1c6e4136d1abbf4b7d0647 data/oresandbosses/loot_table/blocks/eflame_ore.json
+e9728cfd0752c5300df11da6f173ebfaf5ad20dd data/oresandbosses/loot_table/blocks/frostedlight.json
+aced5645ddda76532f3f2160741ef01ae56943c0 data/oresandbosses/loot_table/blocks/frost_ore.json
+cc64e9eb294e898136f59db7a469a9d914ff9552 data/oresandbosses/loot_table/blocks/spark_ore.json
+edbec7d8d48d37d231e513ae37b0a0c93f4c0669 data/oresandbosses/loot_table/blocks/steel_block.json
+a38deb0392cd2c1c933950683798c8f4fdef46a3 data/oresandbosses/loot_table/blocks/steel_deepslate_ore.json
+a3f1543f6aadadf74e1b5c34d458ba74859fc234 data/oresandbosses/loot_table/blocks/steel_ore.json
+864b7fd9415a8b05754c3d9aadea9f0c2f65bd3a data/oresandbosses/loot_table/blocks/uranium_ore.json

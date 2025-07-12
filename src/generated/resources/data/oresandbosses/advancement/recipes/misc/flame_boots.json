@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_eternal_flame": {
+      "conditions": {
+        "items": [
+          {
+            "items": "oresandbosses:eflame"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "oresandbosses:flame_boots"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_eternal_flame"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "oresandbosses:flame_boots"
+    ]
+  }
+}

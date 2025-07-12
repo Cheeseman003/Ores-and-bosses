@@ -33,8 +33,28 @@
   "item.oresandbosses.frost_chestplate": "Frost Chestplate",
   "item.oresandbosses.frost_leggings": "Frost Leggings",
   "item.oresandbosses.frost_boots": "Frost Boots",
+  "item.oresandbosses.flame_helmet": "Flame Helmet",
+  "item.oresandbosses.flame_chestplate": "Flame Chestplate",
+  "item.oresandbosses.flame_leggings": "Flame Leggings",
+  "item.oresandbosses.flame_boots": "Flame Boots",
+  "item.oresandbosses.spark_helmet": "Spark Helmet",
+  "item.oresandbosses.spark_chestplate": "Spark Chestplate",
+  "item.oresandbosses.spark_leggings": "Spark Leggings",
+  "item.oresandbosses.spark_boots": "Spark Boots",
   "item.oresandbosses.lightning_hammer": "Mjolnir",
   "item.oresandbosses.fear_armor_trim_smithing_template": "FEAR Armor Trim",
+  "item.oresandbosses.flame_bow": "Flame Bow",
+  "item.oresandbosses.shiverheart": "ShiverHeart",
+
+
+  "item.oresandbosses.steel_cleaver": "Steel Cleaver",
+  "item.oresandbosses.steel_pickaxe": "Steel Pickaxe",
+  "item.oresandbosses.steel_axe": "Steel Axe",
+  "item.oresandbosses.steel_shovel": "Steel Shovel",
+  "item.oresandbosses.steel_hoe": "Steel Hoe",
+
+  "effect.oresandbosses.slimey": "Slimey",
+  "enchantment.oresandbosses.fire_ball": "Inferno Burst",
 
 
   "block.oresandbosses.steel_block": "Block of Steel",
@@ -45,9 +65,14 @@
   "block.oresandbosses.frostedlight": "Frosted Light",
   "block.oresandbosses.spark_ore": "Spark Ore",
   "block.oresandbosses.eflame_ore": "Eternal Flame Ore",
-  "tooltip.oresandbosses.frost_boots.tooltip": "§7Full set:",
-  "tooltip.oresandbosses.frost_boots.freezing": "§bImmunity to freezing in powdered snow ",
-  "tooltip.oresandbosses.frost_boots.slow": "§bSlows nearby mobs",
+  "tooltip.oresandbosses.frost_boots.tooltip": "§6Full set: Icy Vains",
+  "tooltip.oresandbosses.frost_boots.freezing": "§7Immunity to freezing in powdered snow ",
+  "tooltip.oresandbosses.frost_boots.slow": "§7Slows nearby mobs",
+  "tooltip.oresandbosses.shiverheart.ability": "§6Right-Click: Flash Freeze",
+  "tooltip.oresandbosses.shiverheart.slow": "§7Flash Freezes the air in front of you",
+  "tooltip.oresandbosses.shiverheart.cooldown": "§7Applies Slowness III for 3s",
+  "tooltip.oresandbosses.shiverheart.abilitytip": "§8Cooldown: 15 seconds",
+  "tooltip.oresandbosses.shiverheart.lore": "§dA Legendary Blade Wielded by The Frost King",
 
   "trim_pattern.oresandbosses.fear": "FEAR Armor Trim",
   "trim_material.oresandbosses.frost_ingot": "Frost Material"

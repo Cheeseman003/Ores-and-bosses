@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "oresandbosses:frost_chunk"
+    }
+  },
+  "pattern": [
+    "   ",
+    " BB",
+    " BB"
+  ],
+  "result": {
+    "count": 3,
+    "id": "oresandbosses:frost_ingot"
+  }
+}

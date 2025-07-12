@@ -69,6 +69,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('X', Items.COPPER_INGOT)
                 .define('B', Items.STICK)
                 .unlockedBy("has_copper", has(Items.COPPER_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.STEEL_CLEAVER.get())
+                .pattern(" X ")
+                .pattern(" X ")
+                .pattern(" B ")
+                .define('X', ModItems.STEEL.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_steel_ingot", has(ModItems.STEEL)).save(recipeOutput);
 
 
 
@@ -102,6 +109,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('X', Items.COPPER_INGOT)
                 .define('B', Items.STICK)
                 .unlockedBy("has_copper", has(Items.COPPER_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.STEEL_PICKAXE.get())
+                .pattern("XXX")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('X', ModItems.STEEL.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_steel_ingot", has(ModItems.STEEL)).save(recipeOutput);
 
 
 
@@ -133,6 +147,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('X', Items.COPPER_INGOT)
                 .define('B', Items.STICK)
                 .unlockedBy("has_copper", has(Items.COPPER_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.STEEL_AXE.get())
+                .pattern("XX ")
+                .pattern("XB ")
+                .pattern(" B ")
+                .define('X', ModItems.STEEL.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_steel_ingot", has(ModItems.STEEL)).save(recipeOutput);
 
 
 
@@ -165,6 +186,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('X', Items.COPPER_INGOT)
                 .define('B', Items.STICK)
                 .unlockedBy("has_copper", has(Items.COPPER_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.STEEL_SHOVEL.get())
+                .pattern(" X ")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('X', ModItems.STEEL.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_steel_ingot", has(ModItems.STEEL)).save(recipeOutput);
 
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.FROST_HOE.get())
@@ -174,6 +202,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('X', ModItems.FROST_INGOT.get())
                 .define('B', Items.STICK)
                 .unlockedBy("has_frost_ingot", has(ModItems.FROST_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.STEEL_HOE.get())
+                .pattern("XX ")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('X', ModItems.STEEL.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_steel_ingot", has(ModItems.STEEL)).save(recipeOutput);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.SPARK_HOE.get())
                 .pattern("XX ")
                 .pattern(" B ")
@@ -236,6 +271,60 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("   ")
                 .define('B', ModItems.FROST_INGOT.get())
                 .unlockedBy("has_frost_chunk", has(ModItems.FROST_INGOT)).save(recipeOutput);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FLAME_HELMET.get())
+                .pattern("BBB")
+                .pattern("B B")
+                .pattern("   ")
+                .define('B', ModItems.EFLAME.get())
+                .unlockedBy("has_eternal_flame", has(ModItems.EFLAME)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FLAME_CHESTPLATE.get())
+                .pattern("B B")
+                .pattern("BBB")
+                .pattern("BBB")
+                .define('B', ModItems.EFLAME.get())
+                .unlockedBy("has_eternal_flame", has(ModItems.EFLAME)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FLAME_LEGGINGS.get())
+                .pattern("BBB")
+                .pattern("B B")
+                .pattern("B B")
+                .define('B', ModItems.EFLAME.get())
+                .unlockedBy("has_eternal_flame", has(ModItems.EFLAME)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FLAME_BOOTS.get())
+                .pattern("B B")
+                .pattern("B B")
+                .pattern("   ")
+                .define('B', ModItems.EFLAME.get())
+                .unlockedBy("has_eternal_flame", has(ModItems.EFLAME)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SPARK_HELMET.get())
+                .pattern("BBB")
+                .pattern("B B")
+                .pattern("   ")
+                .define('B', ModItems.SPARK_INGOT.get())
+                .unlockedBy("has_spark_ingot", has(ModItems.SPARK_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SPARK_CHESTPLATE.get())
+                .pattern("B B")
+                .pattern("BBB")
+                .pattern("BBB")
+                .define('B', ModItems.SPARK_INGOT.get())
+                .unlockedBy("has_spark_ingot", has(ModItems.SPARK_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SPARK_LEGGINGS.get())
+                .pattern("BBB")
+                .pattern("B B")
+                .pattern("B B")
+                .define('B', ModItems.SPARK_INGOT.get())
+                .unlockedBy("has_spark_ingot", has(ModItems.SPARK_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SPARK_BOOTS.get())
+                .pattern("B B")
+                .pattern("B B")
+                .pattern("   ")
+                .define('B', ModItems.SPARK_INGOT.get())
+                .unlockedBy("has_spark_ingot", has(ModItems.SPARK_INGOT)).save(recipeOutput);
+
+
+
 
 
 

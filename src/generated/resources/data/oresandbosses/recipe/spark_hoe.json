@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "oresandbosses:spark_ingot"
+    }
+  },
+  "pattern": [
+    "XX ",
+    " B ",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "oresandbosses:spark_hoe"
+  }
+}

@@ -6,7 +6,6 @@ import net.Cheesedude11.Ores_and_Bosses.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
@@ -52,6 +51,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> FROSTEDLIGHT = registerBlock("frostedlight",
             () -> new FrostedLight(BlockBehaviour.Properties.of().strength(1f).sound(SoundType.GLASS)
                     .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(FrostedLight.CLICKED) ? 9999 : 0)));
+
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

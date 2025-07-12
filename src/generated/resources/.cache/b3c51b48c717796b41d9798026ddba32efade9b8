@@ -1,0 +1,9 @@
+// 1.21.1	2025-06-24T15:49:24.5083342	Tags for minecraft:block mod id oresandbosses
+385a3114ef01b4fe6109f57887dc06d38dfbed8f data/minecraft/tags/block/incorrect_for_stone_tool.json
+ed05610be1d05dbaed76be15f950b1f0e963b2c6 data/minecraft/tags/block/mineable/pickaxe.json
+e9b5495cf771604e939680e545e43ad707f83d5d data/minecraft/tags/block/needs_diamond_tool.json
+34ccaac6ee0a9a30d507237655db4862f12a53ff data/minecraft/tags/block/needs_iron_tool.json
+a6b6d3814e26c8c885d6951c1b2d1cb13ad5046b data/oresandbosses/tags/block/incorrect_for_copper_tool.json
+23af07b90097da0d6bafab96362d3e5ee3588c80 data/oresandbosses/tags/block/incorrect_for_elemental_tool.json
+49a913f54ea0fb772f12f6a5cbd26aa2016581b9 data/oresandbosses/tags/block/needs_copper_tool.json
+32b13946c4cd1f944b029659ccce5fcb2adad4ff data/oresandbosses/tags/block/needs_elemental_tool.json

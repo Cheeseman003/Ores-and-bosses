@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 250,
+  "experience": 0.35,
+  "group": "spark_ingot",
+  "ingredient": {
+    "item": "oresandbosses:raw_spark"
+  },
+  "result": {
+    "count": 1,
+    "id": "oresandbosses:spark_ingot"
+  }
+}
